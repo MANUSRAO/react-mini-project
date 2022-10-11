@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffefe;
+}
+
+/* Header Styling */
+.heading {
+  font-family: "Inter Tight", sans-serif;
+  background-color: #fbbc04;
+  color: #fff;
+  padding: 15px 10px 15px 20px;
+}
+
+/* Input Styling */
+.createArea {
+  margin: 20px auto 10px auto;
+  width: 30%;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.createArea > input,
+.createArea > textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+}
+
+.createArea > button {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: #fbbc04;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* Note Container */
+.notes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Notes Styling */
+.note {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  width: 20%;
+  height: 120px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note:hover {
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.note > h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.note > p {
+  font-family: "Roboto", sans-serif;
+}
+
+.note > button {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #fbbc04;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  position: relative;
+  margin: 0px 7px 0px auto;
+  cursor: pointer;
+}
+
+/* Footer Styling */
+.footing {
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+}
+
+/* Styling for mobile displays */
+@media (max-width: 450px) {
+  .createArea {
+    width: 70%;
+  }
+  .note {
+    width: 90%;
+  }
+}
